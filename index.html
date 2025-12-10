@@ -1,328 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Megamallz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
+  <body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+      <div class="logo">Megamallz</div>
 
-<!-- Navbar section -->
-<nav class="navbar">
-    <div class="logo">Megamallz</div>
-
-    <div class="search-box">
-        <input type="text" placeholder="Search for products, brands and more...">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search for products, brands and more..."
+        />
         <button><i class="fa fa-search"></i></button>
-    </div>
+      </div>
 
-    <div class="nav-actions">
+      <div class="nav-actions">
         <button class="login-btn">Login</button>
         <button class="signup-btn">Signup</button>
         <i class="fa fa-shopping-cart cart"></i>
-    </div>
+      </div>
 
-    <div class="menu-icon" id="menu-icon">
+      <div class="menu-icon" id="menu-icon">
         <i class="fa fa-bars"></i>
-    </div>
-</nav>
+      </div>
+    </nav>
 
+    <div class="mobile-menu" id="mobile-menu">
+      <input type="text" placeholder="Search..." class="mobile-search" />
 
-<div class="mobile-menu" id="mobile-menu">
-    <input type="text" placeholder="Search..." class="mobile-search">
-
-    <button class="login-btn">Login</button>
-    <button class="signup-btn">Signup</button>
-    <p class="mobile-cart"><i class="fa fa-shopping-cart"></i> Cart</p>
-</div>
-
-<!-- Swiper Container -->
-<!-- Swiper Container -->
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-            <img src="images/swiper3.jpg">
-            <div class="slide-content">
-                <h2>Welcome to the largest shopping world</h2>
-                <h1>MegaMallz</h1>
-                <button class="shop-now">Shop Now</button>
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images/swiper1.jpg">
-            <div class="slide-content">
-                <h2>Best Deals Everyday</h2>
-                <button class="shop-now">Explore</button>
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images/swiper2.jpg">
-            <div class="slide-content">
-                <h2>Fashion • Electronics • Grocery</h2>
-                <button class="shop-now">Start Shopping</button>
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images/swiper4.jpg">
-            <div class="slide-content">
-                <h2>Everything You Need in One Place</h2>
-                <button class="shop-now">Discover</button>
-            </div>
-        </div>
-
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Signup</button>
+      <p class="mobile-cart"><i class="fa fa-shopping-cart"></i> Cart</p>
     </div>
 
-    <div class="swiper-scrollbar"></div>
-</div>
+    <!-- Swiper Container -->
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/swiper3.jpg" />
+          <div class="slide-content">
+            <h2>Welcome to the largest shopping world</h2>
+            <h1>MegaMallz</h1>
+            <button class="shop-now">Shop Now</button>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <img src="images/swiper1.jpg" />
+          <div class="slide-content">
+            <h2>Best Deals Everyday</h2>
+            <button class="shop-now">Explore</button>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <img src="images/swiper2.jpg" />
+          <div class="slide-content">
+            <h2>Fashion • Electronics • Grocery</h2>
+            <button class="shop-now">Start Shopping</button>
+          </div>
+        </div>
 
-<!-- Category-->
-  <div class="Category-container">
-    <div class="category-title">
+        <div class="swiper-slide">
+          <img src="images/swiper4.jpg" />
+          <div class="slide-content">
+            <h2>Everything You Need in One Place</h2>
+            <button class="shop-now">Discover</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- Category-->
+    <div class="Category-container">
+      <div class="category-title">
         <h2>Shop by Category</h2>
+      </div>
+
+      <div class="category-flex">
+        <div class="category-card">
+          <img src="images/e1.jpg" alt="Electronics" />
+          <h3>Electronics</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/t1.jpg" alt="Fashion" />
+          <h3>Man's Clothing</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/g1.jpg" alt="Grocery" />
+          <h3>Grocery</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/d1.jpg" alt="Home Appliances" />
+          <h3>Woman's Clothing</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/b1.jpg" alt="Books" />
+          <h3>Kids</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/s1.jpg" alt="Sports" />
+          <h3>Sports</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/v1.jpg" alt="Vegetables" />
+          <h3>Vegetables</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/h1.jpg" alt="Homes" />
+          <h3>Homes</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="images/be1.jpg" alt="Beauty" />
+          <h3>Beauty</h3>
+        </div>
+      </div>
     </div>
 
-    <div class="category-flex">
-        <div class="category-card">
-            <img src="images/e1.jpg" alt="Electronics">
-            <h3>Electronics</h3>
-        </div>
+    <!--New Arrival -->
+    <section class="new-arrival">
+      <div class="arrival-title">
+        <h2>New Arrivals</h2>
+        <a href="next-page.html" class="see-more">See More →</a>
+      </div>
 
-        <div class="category-card">
-            <img src="images/t1.jpg" alt="Fashion">
-            <h3>Man's Clothing</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/g1.jpg" alt="Grocery">
-            <h3>Grocery</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/d1.jpg" alt="Home Appliances">
-            <h3>Woman's Clothing</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/b1.jpg" alt="Books">
-            <h3>Kids</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/s1.jpg" alt="Sports">
-            <h3>Sports</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/v1.jpg" alt="Vegetables">
-            <h3>Vegetables</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/h1.jpg" alt="Homes">
-            <h3>Homes</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="images/be1.jpg" alt="Beauty">
-            <h3>Beauty</h3>
-        </div>
-    </div>
-</div>
-
-
-<!--New Arrival -->
- <section class="new-arrival">
-    <div class="arrival-title">
-    <h2>New Arrivals</h2>
-    <a href="next-page.html" class="see-more">See More →</a>
-</div>
-
-
-    <div class="arrival-grid">
-
+      <div class="arrival-grid">
         <div class="arrival-card">
-            <img src="images/Wireless.jpg" alt="Product">
-            <h3>Wireless Bluetooth Earbuds</h3>
-            <p>$29.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Wireless.jpg" alt="Product" />
+          <h3>Wireless Bluetooth Earbuds</h3>
+          <p>$29.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/tv.jpg" alt="Product">
-            <h3>4K Ultra HD Smart TV</h3>
-            <p>$399.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/tv.jpg" alt="Product" />
+          <h3>4K Ultra HD Smart TV</h3>
+          <p>$399.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Luxury.jpg" alt="Product">
-            <h3>Luxury Leather Wallet</h3>
-            <p>$49.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Luxury.jpg" alt="Product" />
+          <h3>Luxury Leather Wallet</h3>
+          <p>$49.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Gaming.jpg" alt="Product">
-            <h3>Gaming Mouse RGB Edition</h3>
-            <p>$24.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Gaming.jpg" alt="Product" />
+          <h3>Gaming Mouse RGB Edition</h3>
+          <p>$24.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Fitness.jpg" alt="Product">
-            <h3>Fitness Smartwatch Pro</h3>
-            <p>$89.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Fitness.jpg" alt="Product" />
+          <h3>Fitness Smartwatch Pro</h3>
+          <p>$89.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Trendy.jpg" alt="Product">
-            <h3>Trendy Men's Sneakers</h3>
-            <p>$59.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Trendy.jpg" alt="Product" />
+          <h3>Trendy Men's Sneakers</h3>
+          <p>$59.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Women.jpg" alt="Product">
-            <h3>Women's Stylish Backpack</h3>
-            <p>$39.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Women.jpg" alt="Product" />
+          <h3>Women's Stylish Backpack</h3>
+          <p>$39.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Noise.jpg" alt="Product">
-            <h3>Noise Cancelling Headphones</h3>
-            <p>$79.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Noise.jpg" alt="Product" />
+          <h3>Noise Cancelling Headphones</h3>
+          <p>$79.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Kids.jpg" alt="Product">
-            <h3>Kids Educational Tablet</h3>
-            <p>$99.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Kids.jpg" alt="Product" />
+          <h3>Kids Educational Tablet</h3>
+          <p>$99.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Premium Kitchen Blender.jpg" alt="Product">
-            <h3>Premium Kitchen Blender</h3>
-            <p>$45.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Premium Kitchen Blender.jpg" alt="Product" />
+          <h3>Premium Kitchen Blender</h3>
+          <p>$45.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Organic Skin Care Cream.jpg" alt="Product">
-            <h3>Organic Skin Care Cream</h3>
-            <p>$19.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Organic Skin Care Cream.jpg" alt="Product" />
+          <h3>Organic Skin Care Cream</h3>
+          <p>$19.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Portable Power Bank 20000mAh.jpg" alt="Product">
-            <h3>Portable Power Bank 20000mAh</h3>
-            <p>$29.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Portable Power Bank 20000mAh.jpg" alt="Product" />
+          <h3>Portable Power Bank 20000mAh</h3>
+          <p>$29.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/Stainless Steel Water Bottle.jpg" alt="Product">
-            <h3>Stainless Steel Water Bottle</h3>
-            <p>$14.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/Stainless Steel Water Bottle.jpg" alt="Product" />
+          <h3>Stainless Steel Water Bottle</h3>
+          <p>$14.99</p>
+          <h3>Add To Cart</h3>
         </div>
 
         <div class="arrival-card">
-            <img src="images/HD Security Camera.jpg" alt="Product">
-            <h3>HD Security Camera</h3>
-            <p>$59.99</p>
-            <h3>Add To Cart</h3>
+          <img src="images/HD Security Camera.jpg" alt="Product" />
+          <h3>HD Security Camera</h3>
+          <p>$59.99</p>
+          <h3>Add To Cart</h3>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- Electronics Section -->
-<section class="electronics-section">
-
-    <div class="electronics-title">
+    <!-- Electronics Section -->
+    <section class="electronics-section">
+      <div class="electronics-title">
         <h2>Latest Electronics</h2>
         <a href="electronics-page.html" class="electronics-more">See More..</a>
-    </div>
+      </div>
 
-    <div class="electronics-grid">
-
+      <div class="electronics-grid">
         <div class="electronics-card">
-            <img src="images/Wireless.jpg" alt="Product">
-            <h3>Smart WiFi Light Bulb</h3>
-            <p>$12.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/Wireless.jpg" alt="Product" />
+          <h3>Smart WiFi Light Bulb</h3>
+          <p>$12.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
         </div>
 
         <div class="electronics-card">
-            <img src="images/tv.jpg" alt="Product">
-            <h3>Mini Portable Projector</h3>
-            <p>$89.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/tv.jpg" alt="Product" />
+          <h3>Mini Portable Projector</h3>
+          <p>$89.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
         </div>
 
         <div class="electronics-card">
-            <img src="images/Gaming.jpg" alt="Product">
-            <h3>Mechanical Gaming Keypad</h3>
-            <p>$34.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/Gaming.jpg" alt="Product" />
+          <h3>Mechanical Gaming Keypad</h3>
+          <p>$34.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
         </div>
 
         <div class="electronics-card">
-            <img src="images/Noise.jpg" alt="Product">
-            <h3>Smart Home Voice Assistant</h3>
-            <p>$49.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/Noise.jpg" alt="Product" />
+          <h3>Smart Home Voice Assistant</h3>
+          <p>$49.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
         </div>
 
         <div class="electronics-card">
-            <img src="images/Kids.jpg" alt="Product">
-            <h3>Portable Mini Bluetooth Speaker</h3>
-            <p>$19.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/Kids.jpg" alt="Product" />
+          <h3>Portable Mini Bluetooth Speaker</h3>
+          <p>$19.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
         </div>
 
         <div class="electronics-card">
-            <img src="images/Portable Power Bank 20000mAh.jpg" alt="Product">
-            <h3>Fast Charging USB Hub 6-Port</h3>
-            <p>$24.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/Portable Power Bank 20000mAh.jpg" alt="Product" />
+          <h3>Fast Charging USB Hub 6-Port</h3>
+          <p>$24.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
         </div>
 
         <div class="electronics-card">
-            <img src="images/HD Security Camera.jpg" alt="Product">
-            <h3>360° Smart Indoor Camera</h3>
-            <p>$69.99</p>
-            <h3 class="add-cart">Add To Cart</h3>
+          <img src="images/HD Security Camera.jpg" alt="Product" />
+          <h3>360° Smart Indoor Camera</h3>
+          <p>$69.99</p>
+          <h3 class="add-cart">Add To Cart</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Part start -->
+    <footer class="footer">
+      <div class="footer-contents">
+        <div class="footer-left-side">
+          <h1><a href="#">Megamallz</a></h1>
+          <div class="left-side-content">
+            <ul>
+              Company
+            </ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Brands</a></li>
+            <li><a href="#">Careers</a></li>
+          </div>
+        </div>
+        <div class="left-side-content">
+          <ul>
+            Help
+          </ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Loyalty Program</a></li>
         </div>
 
-        
+        <div class="left-side-content">
+          <ul>
+            Policy
+          </ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Loyalty Program</a></li>
+        </div>
 
-    </div>
-</section>
+        <div class="right-side-content">
+          <h2>Newsletter</h2>
+          <p>Sign up for get latest news and update</p>
+          <input type="text" />
+          <button>Subscribe</button>
+          <div class="contact">
+            <h4><i class="fa-solid fa-phone"></i>09123-456789</h4>
+            <h4><i class="fa-regular fa-envelope"></i>support@MegaMallz.com</h4>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
 
+         
+        </div>
+      </div>
+      <div class="last-part">
+        <p>© 2024 MegaMallz. All Rights Reserved.</p> 
+        <img src="/images/payment.webp" alt="#" />
+      </div>
+    </footer>
 
-
-
-
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="script.js"></script>
-</body>
+  </body>
 </html>
